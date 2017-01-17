@@ -25,6 +25,10 @@
 </div>
 <div class="pages-container">
 
+	<div style="display: none;">
+        <img id="share-image" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;" src="http://ww2.sinaimg.cn/mw690/006y063wgw1f8w6p0ah44j308c08caag.jpg">
+    </div>
+
     <div id="shareImg" style="display: none;">
         <img id="share-mask-image" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;" src="https://dcfa.oss-cn-shanghai.aliyuncs.com/index/img/share-mask.jpg">
     </div>
@@ -195,6 +199,7 @@
                 // console.log(url);
                 var src = document.getElementById("img"+this.id).src;
                 document.getElementById("dummy-image").src = src;
+                document.getElementById("share-image").src = src;
                 scrollTo(0,0);
             };
         }
